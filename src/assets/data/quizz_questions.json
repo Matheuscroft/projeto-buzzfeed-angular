@@ -1,0 +1,55 @@
+{
+    "title": "Você é mais Bruxa, Mago ou Feiticeiro?",
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qual elemento mais te atrai?",
+            "options": [
+                { "id": 1, "name": "Terra e ervas", "alias": "Bruxa" },
+                { "id": 2, "name": "Ar e conhecimento", "alias": "Mago" },
+                { "id": 3, "name": "Fogo e rituais", "alias": "Feiticeiro" }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Como você prefere lançar sua magia?",
+            "options": [
+                { "id": 1, "name": "Usando poções e ingredientes naturais", "alias": "Bruxa" },
+                { "id": 2, "name": "Com símbolos, runas e encantamentos", "alias": "Mago" },
+                { "id": 3, "name": "Através de pura energia e vontade", "alias": "Feiticeiro" }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "O que é mais importante para você?",
+            "options": [
+                { "id": 1, "name": "Conexão com a natureza e os ciclos", "alias": "Bruxa" },
+                { "id": 2, "name": "Aprendizado e domínio das forças ocultas", "alias": "Mago" },
+                { "id": 3, "name": "Poder e controle sobre a magia", "alias": "Feiticeiro" }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Qual desses artefatos mágicos você escolheria?",
+            "options": [
+                { "id": 1, "name": "Um caldeirão antigo", "alias": "Bruxa" },
+                { "id": 2, "name": "Um grimório cheio de conhecimento", "alias": "Mago" },
+                { "id": 3, "name": "Um amuleto poderoso", "alias": "Feiticeiro" }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Como você vê a magia?",
+            "options": [
+                { "id": 1, "name": "Como algo intuitivo e ligado à natureza", "alias": "Bruxa" },
+                { "id": 2, "name": "Como um estudo complexo e profundo", "alias": "Mago" },
+                { "id": 3, "name": "Como uma força a ser dominada", "alias": "Feiticeiro" }
+            ]
+        }
+    ],
+    "results": {
+        "Bruxa": "Você tem a alma de uma Bruxa! Sua magia é intuitiva, ligada à natureza e aos ciclos da vida.",
+        "Mago": "Você tem a mente de um Mago! Sua magia vem do conhecimento e do estudo profundo das artes ocultas.",
+        "Feiticeiro": "Você tem o poder de um Feiticeiro! Sua magia é intensa, guiada pela vontade e pela manipulação das forças energéticas."
+    }
+}
