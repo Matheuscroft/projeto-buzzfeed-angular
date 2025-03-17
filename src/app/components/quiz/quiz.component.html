@@ -1,15 +1,15 @@
-<div class="quizz__container">
+<div class="quiz__container">
 
-    <div class="quizz_logo">
+    <div class="quiz_logo">
       <img src="../../../assets/imgs/logo.png" alt="" srcset="">
       <h3>{{title}}</h3>
     </div>
   
-    <div *ngIf=!finished class="quizz_questions">
+    <div *ngIf=!finished class="quiz_questions">
         <h3>{{questionSelected.question}}</h3>
     </div>
   
-    <div *ngIf=!finished class="quizz_options">
+    <div *ngIf=!finished class="quiz_options">
   
       <button
         *ngFor="let option of questionSelected.options; let i = index"
@@ -21,7 +21,7 @@
   
     </div>
   
-    <div *ngIf=finished class="quizz_results">
+    <div *ngIf=finished class="quiz_results">
       <h1>O Seu resultado é:</h1>
       <p>{{answerSelected}}</p>
     </div>

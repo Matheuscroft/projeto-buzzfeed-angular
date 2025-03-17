@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { QuizzComponent } from '../../components/quiz/quiz.component';
+import { QuizComponent } from '../../components/quiz/quiz.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports: [QuizzComponent],
+  imports: [QuizComponent],
 })
 export class HomeComponent implements OnInit {
 
