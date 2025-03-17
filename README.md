@@ -1,59 +1,85 @@
-# ProjetoBuzzfeed
+# Projeto Clone Buzzfeed 🎯
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Este projeto é um clone do site Buzzfeed, focado na criação de quizzes interativos! 🔮 O teste verifica se você tem mais tendência a ser uma Bruxa, um Mago ou um Feiticeiro. No final, você recebe um resultado baseado em suas respostas. ✨
 
-## Development server
+## Instalação e Execução 🚀
 
-To start a local development server, run:
+1. **Instale o Angular CLI** (caso ainda não tenha):
+   ```sh
+   npm install -g @angular/cli
+   ```
+2. **Clone o repositório:**
+   ```sh
+   git clone <URL_DO_REPOSITORIO>
+   cd projeto-buzzfeed-clone
+   ```
+3. **Instale as dependências:**
+   ```sh
+   npm install
+   ```
+4. **Inicie o servidor de desenvolvimento:**
+   ```sh
+   ng serve
+   ```
+   Agora, acesse `http://localhost:4200/` no navegador para ver o projeto em execução!
 
-```bash
+## Criando um Novo Projeto Angular
+
+Caso queira criar um projeto do zero:
+```sh
+ng new meu-quiz
+cd meu-quiz
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Estrutura do Projeto 🏗️
 
-## Code scaffolding
+Dentro da pasta `src/`, temos:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 📂 `assets/`
+- **`data/`** - Contém o arquivo `quiz_questions.json` com as perguntas e resultados.
+- **`imgs/`** - Contém imagens utilizadas, incluindo o logo do Buzzfeed.
 
-```bash
-ng generate component component-name
+### 📂 `app/`
+- **`pages/home/`** - Contém a página inicial do quiz.
+- **`components/quiz/`** - Componente responsável pelo quiz interativo.
+
+## Como Criar Componentes e Páginas 🛠️
+
+Para criar um novo componente:
+```sh
+ng generate component components/nome-do-componente
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+Para criar uma nova página:
+```sh
+ng generate component pages/nome-da-pagina
 ```
 
-## Building
+## Exemplo de Estrutura de Dados 📜
+Os dados do quiz estão armazenados em `src/assets/data/quiz_questions.json`:
 
-To build the project run:
-
-```bash
-ng build
+```json
+{
+    "title": "Você é mais Bruxa, Mago ou Feiticeiro?",
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qual elemento mais te atrai?",
+            "options": [
+                { "id": 1, "name": "Terra e ervas", "alias": "Bruxa" },
+                { "id": 2, "name": "Ar e conhecimento", "alias": "Mago" },
+                { "id": 3, "name": "Fogo e rituais", "alias": "Feiticeiro" }
+            ]
+        }
+    ],
+    "results": {
+        "Bruxa": "Você tem a alma de uma Bruxa! Sua magia é intuitiva, ligada à natureza e aos ciclos da vida.",
+        "Mago": "Você tem a mente de um Mago! Sua magia vem do conhecimento e do estudo profundo das artes ocultas.",
+        "Feiticeiro": "Você tem o poder de um Feiticeiro! Sua magia é intensa, guiada pela vontade e pela manipulação das forças energéticas."
+    }
+}
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Recursos Adicionais 📚
+Para mais informações, consulte a [documentação oficial do Angular CLI](https://angular.dev/tools/cli).
